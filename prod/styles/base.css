@@ -1,0 +1,68 @@
+html,
+body {
+	font-family: 'Quicksand', sans-serif;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	background: linear-gradient( #A1FF79, #245EF5);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: white;
+}
+
+body header h1 {
+	text-align: center;
+	font-family: 'Great Vibes', cursive;
+	font-size: 3.5rem;
+	color: white;
+	margin-bottom: .25rem;
+}
+body header h2 {
+	text-align: center;
+	font-size: 1.75rem;
+	margin: 0;
+	color: white;
+}
+
+body nav ul {
+	list-style-type: none;
+	text-align: center;
+	margin:0 auto;
+	margin-top: 2rem;
+    padding:0;
+}
+
+body nav ul li {
+	display:inline-block;
+	width: 125px;
+	margin: .5rem;
+	transition: transform 1s;
+	cursor: pointer;
+}
+
+body nav ul li a {
+	text-decoration: none;
+	color: #245EF5;
+	font-size: 1.25rem;
+	display: block;
+	padding: .5rem;
+	border-radius: 10px;
+}
+
+body nav ul li a.main_nav {
+	border: 5px solid white;
+}
+
+body nav ul li:hover {
+	transform: scale(1.1);
+}
+
+body section div.content {
+	text-align: left;
+	border: 2px solid white;
+	border-radius: 10px;
+	width: 90%;
+	margin: 1rem auto;
+	padding: .75rem;
+}

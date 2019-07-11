@@ -1,0 +1,284 @@
+div.img_wrap {
+	width: 150px;
+	margin: .2rem auto;
+}
+/* Team sub navigation styling*/
+body nav#teams_nav ul {
+	margin: 0;
+}
+body nav#teams_nav ul li {
+	border: none;
+	display: inline;
+	width: 30%;
+	text-decoration: underline;
+	font-size: 1.5rem;
+	margin: 0;
+}
+
+.john-reardon {
+	font-size: .5rem;
+	padding-top: .5rem;
+	text-decoration: underline;
+}
+
+/* Annountments date styling */
+body section div.content p.date {
+	font-size: .75rem;
+	font-style: italic;
+	margin: 1rem auto 0;
+}
+
+/* Gallery Styling */
+/* The grid: Four equal columns that floats next to each other */
+.row {
+	align-content: center;
+	text-align: center;
+}
+.column {
+    max-width: 200px;
+    margin: 12px;
+    display: inline-block;
+}
+
+/* Style the images inside the grid */
+.column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+    max-width: 100%;
+    border: white solid 2px;
+    border-radius: 10px;
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+    position: relative;
+    display: none;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Expanded Image */
+img#expandedImg {
+	border: white solid 2px;
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: #011328;
+    font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+} 
+
+body section div.content h2,
+body section div.content h3 {
+	text-decoration: underline;
+	font-size: 1.5rem;
+	margin: 0;
+	color: white;
+}
+
+body section div.content h4 {
+	margin: .25rem 0 0 0;
+	font-size: 1.25rem;
+}
+
+body section div.content p{
+	margin: 0;
+	font-size: 1rem;
+	text-align: justify;
+}
+
+body section div.content p.contact_p {
+	text-align: center;
+}
+
+body section#contact div.content {
+	text-align: center;
+}
+
+body section#contact div.content a {
+	color: white;
+	display: block;
+	margin: 1rem;
+}
+
+/* Table styling */
+
+table {
+	width: 100%;
+}
+
+th {
+	padding: 8px;
+	font-size: 1rem;
+}
+
+th, 
+td {
+	font-size: .5rem;
+	text-align: center;
+}
+
+/*  Footer styling */
+
+body footer.footer {
+	background-color: white;
+	text-align: center;
+}
+
+body footer div.content {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+body footer div.content a {
+	text-decoration: none;
+	color: #245EF5;
+}
+
+/* sticky footer hack */
+
+.wrapper {
+  min-height: 100%;
+
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -50px;
+}
+.footer,
+.push {
+  height: 50px;
+}
+
+/* media querys */
+
+@media screen and (min-width: 600px) {
+	body nav ul li {
+		width: 110px;
+		margin: auto 5px;
+	}
+	body section div.content h2,
+	body section div.content h3 {
+		font-size: 1.5rem;
+	}
+	body div.content {
+		font-size: 1.25rem;
+	}
+	body section div.content p {
+		font-size: 1.25rem;
+	}
+	body header h1 {
+		font-size: 4.5rem;
+	}
+	body header h2 {
+		font-size: 2.5rem;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	body header h1 {
+		font-size: 6rem;
+		margin-top: 1rem;
+	}
+	body header h2 {
+		font-size: 3rem;
+	}
+	body nav ul li {
+		width: 120px;
+	}
+	body section div.content {
+		width: 70%;
+	}
+	body section div.content h2,
+	body section div.content h3 {
+		font-size: 2rem;
+	}
+	body section div.content p {
+		font-size: 1.5rem;
+	}
+	th, 
+	td {
+		font-size: 1rem;
+	}
+	th {
+		font-size: 1.25rem;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	div.img_wrap {
+		top: 46px;
+		left: 75px;
+	}
+	body header h1 {
+		font-size: 8rem;
+	}
+	body header h2 {
+		font-size: 4rem;
+	}
+	body section div.content h2,
+	body section div.content h3 {
+		font-size: 2.5rem;
+	}
+	body section div.content p {
+		font-size: 1.75rem;
+	}
+	th, 
+	td {
+		font-size: 1.25rem;
+	}
+	th {
+		font-size: 1.5rem;
+	}
+}
+
+@media screen and (min-width: 2000px) {
+	body header h1 {
+		font-size: 10rem;
+		margin-top: 2rem;
+	}
+	body header h2 {
+		font-size: 6rem;
+	}
+	body nav ul li {
+		width: 180px;
+	}
+	body section div.content h2,
+	body section div.content h3 {
+		font-size: 3rem;
+	}
+	body section div.content p {
+		font-size: 2rem;
+	}
+	th, 
+	td {
+		font-size: 1.5rem;
+	}
+	th {
+		font-size: 1.75rem;
+	}
+}

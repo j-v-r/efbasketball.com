@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Elites Finest Basketball Homepage</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Youth basketball organization based in Saint Paul, MN">
+    <meta name="keywords" content="Basketball, Youth, Minnesota, St. Paul, Saint Paul, Sports">
+    <meta name="author" content="John Reardon">
+	<link rel="stylesheet" type="text/css" href="styles/base.css">
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand|Great+Vibes" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+		<nav id="top">
+			<ul>
+				<li>
+					<a href="index.html" class="main_nav">Home</a>
+				</li>
+				<li>
+					<a href="teams.html" class="main_nav">Teams</a>
+				</li>
+				<li>
+					<a href="schedule.html" class="main_nav">Schedule</a>
+				</li>
+				<li>
+					<a href="contact.html" class="main_nav">Contact</a>
+				</li>
+			</ul>
+		</nav>
+		<header>
+			<h1>
+				Elites Finest 
+			</h1>
+			<div class="img_wrap">
+				<img src="assets/basketball.png" alt="Image of a basketball.">
+			</div>
+			<h2>Basketball</h2>
+		</header>
+		<section id="announcements">
+			<div class="content">
+				<h2>Announcements</h2>
+				<p class="date">Last Updated - February 17th, 2019</p>
+				<p>Tryouts will be at 6:15PM on March 13th at St. Paul Humboldt High School.</p>
+			</div>
+		</section>
+		<section id="gallery">
+			<div class="content">
+				<h2>Images</h2>
+				<!-- The grid: columns -->
+				<div class="row">
+				  <div class="column">
+				    <img src="assets/images/18U.jpg" alt="18U Basketball Team" onclick="openImg(this);">
+				  </div>
+				  <div class="column">
+				    <img src="assets/images/14U.jpeg" alt="14U Basketball Team - Lugo" onclick="openImg(this);">
+				  </div>
+				  <div class="column">
+				    <img src="assets/images/14U_Welden.jpeg" alt="14U Basketball Team - Weldon" onclick="openImg(this);">
+				  </div>
+				</div>
+				<div class="container">
+				 <!-- Close the image -->
+				  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+				  <!-- Expanded image -->
+				  <img id="expandedImg" style="width:100%">
+
+				  <!-- Image text -->
+				  <div id="imgtext"></div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="about">
+			<div class="content">
+				<h2>About</h2>
+				<p>&emsp;Elites Finest is a youth basketball program that has been in operation for over four years. Starting in 2012 with one team we now have five teams with over 65 players. We cater to kids 13 to 18 years old. Our program is open for kids throughout the Twin Cities area. Our teams play in tournaments in Minnesota as well as regional and national AAU basketball competitions. We have 10 coaches who dedicate their time and energy to ensure our teams and players are the best they can be. Our coaches have extensive experience in youth and high school sports; we work hard to ensure that the student athlete reaches their full potential both on and off the court.</p>
+			</div>
+		</section>
+		<div class="push"></div>	
+	</div>
+	<footer class="footer">
+		<div class="content">
+			<a href="index.html">Home |</a>
+			<a href="contact.html">Contact |</a>
+			<a href="#top">Back to top</a>
+			<div class="john-reardon">
+				<a href="https://www.john-reardon.com">Built deployed and managed by www.john-reardon.com</a>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript">
+		function openImg(imgs) {
+  		// Get the expanded image
+  			var expandImg = document.getElementById("expandedImg");
+  		// Get the image text
+  			var imgText = document.getElementById("imgtext");
+  		// Use the same src in the expanded image as the image being clicked on from the grid
+  			expandImg.src = imgs.src;
+  		// Use the value of the alt attribute of the clickable image as text inside the expanded image
+  			imgText.innerHTML = imgs.alt;
+  		// Show the container element (hidden with CSS)
+  			expandImg.parentElement.style.display = "block";
+		}
+	</script>
+</body>
+</html>
